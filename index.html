@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grainy example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="grainier.js"></script>
+    
+</head>
+<body>
+    <div id="grainier" class="container">
+        <div class="item-container">
+            <span class="red item"></span>
+            <span class="blue item"></span>
+            <span class="red item"></span>
+        </div>
+
+        <input 
+            type="text"
+            placeholder="<input> is also child but z-index: 2">
+        </input>
+
+    </div>
+
+    
+
+    <script>
+    
+        options = {
+            density: 2,
+            opacity: 0.2,
+        }
+        makeGrainy("grainier", options)
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     setInterval(() => makeGrainy("grainier", options), 50)
+        // })
+
+    </script>
+</body>
+</html>
